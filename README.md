@@ -1,2 +1,60 @@
+[TOC]
+
 # BoboSystem
-This could help small business managers to manage employees and scheduling,
+
+The project uses a microservice architecture that can be deployed to the Kubernetes cluster.
+
+### function(relatively simple)
+
+  - The administrator Admin manages the company and the scheduling 
+  - employee Worker manages the personal information
+
+### technology
+
+- React 
+- SpringBoot
+- MySQL
+- Docker
+- Kubernetes
+- AWS-SNS
+- AWS-SMS
+- AWS-SES
+
+#### Overall Design
+
+![image-20221026224150244](https://tva1.sinaimg.cn/large/008vxvgGgy1h7j0ubj372j31mn0u0qab.jpg)
+
+##### Gateway
+- Gateway, responsible for routing and authentication.
+
+##### APP SPA
+- Single page application.
+
+##### MyAccount SPA
+- Employee's personal homepage.
+
+##### Who Am I REST API
+- You can view the current user information.
+
+##### Account API REST API
+- User information storage and modification module.
+
+##### Company API REST API
+- Company module, responsible for staff management and scheduling.
+
+##### Bot REST API
+- Message queue. After updating the schedule, a message is sent to the Bot.
+
+##### Mail Sender REST API
+- Fetch the message from the message queue, the consumer of the message. 
+
+- Send email to employee email address.
+
+##### Database
+- The MySQL database
+
+
+
+### TODO
+
+Just a design, not yet started development, continuing
