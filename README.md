@@ -16,8 +16,7 @@ The project uses a microservice architecture that can be deployed to the Kuberne
 - MySQL
 - Docker
 - Kubernetes
-- AWS-SNS
-- AWS-SMS
+- AWS-SQS
 - AWS-SES
 
 #### Overall Design
