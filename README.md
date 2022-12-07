@@ -21,7 +21,7 @@ The project uses a microservice architecture that can be deployed to the Kuberne
 
 #### Overall Design
 
-![image-20221026224150244](https://tva1.sinaimg.cn/large/008vxvgGgy1h7j0ubj372j31mn0u0qab.jpg)
+![image-20221206023919326](https://tva1.sinaimg.cn/large/008vxvgGgy1h8tght890uj30zk0hrjsy.jpg)
 
 ##### Gateway
 - Gateway, responsible for routing and authentication.
